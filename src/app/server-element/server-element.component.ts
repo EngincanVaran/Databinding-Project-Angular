@@ -20,6 +20,10 @@ export class ServerElementComponent implements OnInit, OnChanges, DoCheck,
     console.log(changes);
   }
 
+  ngOnInit(): void {
+    console.log("Server-Component ngOnInit Called");
+  }
+
   ngDoCheck(): void {
     console.log("Server-Component ngDoCheck Called");
   }
@@ -38,10 +42,6 @@ export class ServerElementComponent implements OnInit, OnChanges, DoCheck,
 
   ngAfterViewChecked(): void {
     console.log("Server-Component ngAfterViewChecked Called");
-  }
-
-  ngOnInit(): void {
-    console.log("Server-Component ngOnInit Called");
   }
 
   ngOnDestroy(): void {
